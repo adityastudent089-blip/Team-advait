@@ -3,7 +3,7 @@ import {
   ArrowDownRight, ArrowRight, CalendarDays, MapPin, Search, Menu, X,
   Music2, Mic2, Trophy, Palette, HeartHandshake, GraduationCap, Utensils,
   Plus, Clock3, Users, Bookmark, Check, ChevronDown, Sparkles, Ticket,
-} from 'lucide-react'
+} from './icons'
 
 const categories = [
   { name: 'All events', icon: Sparkles },
