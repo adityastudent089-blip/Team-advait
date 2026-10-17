@@ -101,7 +101,7 @@ function App() {
   return (
     <div className="site-shell">
       <header className="site-header">
-        <a className="brand" href="#top" onClick={() => goTo('top')} aria-label="CampusLoop home"><span className="brand-mark"><span /><span /><span /></span><span>SLIET<span className="brand-light">GATHERIFY</span><small>Toghther we can,Make a difference</small> </span></a>
+        <a className="brand" href="#top" onClick={() => goTo('top')} aria-label="CampusLoop home"><span className="brand-mark"><span /><span /><span /></span><span>SLIET<span className="brand-light">GATHERIFY</span><small>Together we can,Make a difference</small> </span></a>
         <nav className={`desktop-nav ${mobileMenu ? 'nav-open' : ''}`}>
           <button onClick={() => goTo('discover')}>Discover</button><button onClick={() => goTo('calendar')}>What's on</button><button onClick={() => goTo('about')}>For organisers</button>
           <button className="mobile-host-link" onClick={() => goTo('host')}>Host an event <ArrowRight size={16} /></button>
@@ -111,7 +111,7 @@ function App() {
 
       <main id="top">
         <section className="hero section-wrap">
-          <div className="hero-copy"><h1>Good things<br />happen toghther.</h1><p className="hero-lede">Find your next favourite thing. From college fests and live gigs to big ideas, game days and everything in between.</p><div className="hero-actions"><button className="button button-dark" onClick={() => goTo('discover')}>Explore events <ArrowDownRight size={17} /></button><button className="text-button" onClick={() => goTo('host')}>I'm organising something <ArrowRight size={16} /></button></div><div className="hero-proof"><div className="avatar-stack"><span>R</span><span>A</span><span>M</span><span>+</span></div><p><b>Made by students, for students.</b><br />Your campus has more going on than you think.</p></div></div>
+          <div className="hero-copy"><h1>Good things<br />happen together.</h1><p className="hero-lede">Find your next favourite thing. From college fests and live gigs to big ideas, game days and everything in between.</p><div className="hero-actions"><button className="button button-dark" onClick={() => goTo('discover')}>Explore events <ArrowDownRight size={17} /></button><button className="text-button" onClick={() => goTo('host')}>I'm organising something <ArrowRight size={16} /></button></div><div className="hero-proof"><div className="avatar-stack"><span>R</span><span>A</span><span>M</span><span>+</span></div><p><b>Made by students, for students.</b><br />Your campus has more going on than you think.</p></div></div>
           <div className="hero-art">
             <div className="hero-photo-main"><img
   src="/image/hero.jpg"
@@ -144,7 +144,7 @@ function App() {
         <section className="bottom-cta section-wrap"><div className="bottom-cta-mark"><span /><span /><span /></div><div><h2>Don't just hear about it later.</h2><p>Find the thing. Bring a friend. Make a memory.</p></div><button className="button button-dark" onClick={() => goTo('discover')}>Find your next event <ArrowRight size={17} /></button></section>
       </main>
 
-      <footer className="site-footer"><a className="brand footer-brand" href="#top" onClick={() => goTo('top')}><span className="brand-mark"><span /><span /><span /></span><span>SLIET<span className="brand-light">GATHRIFY</span><small>Toghther we can,Make a difference</small></span></a><p>Good things happen together</p><div className="footer-links"><button onClick={() => goTo('discover')}>Discover</button><button onClick={() => goTo('calendar')}>Schedule</button><button onClick={() => goTo('host')}>Host an event</button></div><span className="copyright">© 2026 SLIETGATHERIFY· Made for campus life</span></footer>
+      <footer className="site-footer"><a className="brand footer-brand" href="#top" onClick={() => goTo('top')}><span className="brand-mark"><span /><span /><span /></span><span>SLIET<span className="brand-light">GATHRIFY</span><small>Together we can,Make a difference</small></span></a><p>Good things happen together</p><div className="footer-links"><button onClick={() => goTo('discover')}>Discover</button><button onClick={() => goTo('calendar')}>Schedule</button><button onClick={() => goTo('host')}>Host an event</button></div><span className="copyright">© 2026 SLIETGATHERIFY· Made for campus life</span></footer>
       <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} onRegister={(id) => setRegistered((current) => current.includes(id) ? current : [...current, id])} />
       {registered.length > 0 && <div className="registration-count" aria-live="polite"><Check size={14} /> {registered.length} event{registered.length === 1 ? '' : 's'} registered</div>}
     </div>
